@@ -1,0 +1,226 @@
+:root {
+  --purple: #6b5b95;
+  --purple-dark: #55476f;
+  --blue-link: #5b7ca5;
+  --text: #2a2a2a;
+  --text-muted: #5a5a5a;
+  --bg: #ffffff;
+  --border: #e5e0ea;
+  --card-bg: #faf9fc;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+nav {
+  background: var(--purple);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .brand {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+nav .links a {
+  color: #f0edf5;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+nav .links a:hover { text-decoration: underline; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.7rem;
+  margin: 48px 0 10px;
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--purple);
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+p { margin-bottom: 14px; color: var(--text); }
+
+a { color: var(--blue-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  width: 220px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.hero-photo-placeholder {
+  width: 220px;
+  height: 280px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 12px;
+}
+
+.hero-text { flex: 1; min-width: 280px; }
+
+.social-row {
+  margin-top: 22px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.social-row a {
+  color: var(--purple-dark);
+  font-weight: 500;
+}
+
+.muted { color: var(--text-muted); }
+
+.exp-item, .track-card, .project-card, .ad-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 18px;
+  background: var(--card-bg);
+}
+
+.exp-item .meta, .ad-item .meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.exp-item ul, .ad-item ul {
+  margin: 10px 0 0 20px;
+  color: var(--text);
+}
+
+.exp-item li, .ad-item li { margin-bottom: 6px; font-size: 0.95rem; }
+
+.tag {
+  display: inline-block;
+  background: #efeaf5;
+  color: var(--purple-dark);
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin: 4px 6px 0 0;
+}
+
+.track-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.resource-link {
+  display: block;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.cv-embed {
+  width: 100%;
+  height: 85vh;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: var(--purple);
+  color: #fff !important;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.download-btn:hover { background: var(--purple-dark); }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+}
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; align-items: flex-start; gap: 12px; }
+  nav .links a { margin-left: 0; margin-right: 20px; }
+  .hero { flex-direction: column; }
+}
