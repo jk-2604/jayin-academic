@@ -224,3 +224,9 @@ footer {
   nav .links a { margin-left: 0; margin-right: 20px; }
   .hero { flex-direction: column; }
 }
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; align-items: flex-start; gap: 12px; }
+  nav .links a { margin-left: 0; margin-right: 20px; }
+  .hero { flex-direction: column; }
+}
