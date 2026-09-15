@@ -189,6 +189,33 @@ a:hover { text-decoration: underline; }
   background: #fff;
 }
 
+.resource-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.resource-list a {
+  padding: 8px 10px;
+  border-left: 3px solid var(--purple);
+  background: #fff;
+  font-size: 0.88rem;
+}
+
+.project-card .resource-link { margin-top: 16px; }
+
+.detail-header { margin-bottom: 28px; }
+
+.back-link { margin-bottom: 20px; }
+
+.pdf-frame {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
 .cv-embed {
   width: 100%;
   height: 85vh;

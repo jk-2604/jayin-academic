@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Resource — Jayin Khanna</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="brand">Jayin Khanna</a>
+  <div class="links">
+    <a href="../index.html">Home</a>
+    <a href="../academic-development.html">Academic Development</a>
+    <a href="../research.html">Research</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../cv.html">CV</a>
+  </div>
+</nav>
+
+<main>
+  <div class="detail-header">
+    <p class="back-link"><a href="../research.html">← Back to Research</a></p>
+    <h1 id="resource-title">Research Resource</h1>
+    <p class="muted">A research document by Jayin Khanna.</p>
+  </div>
+  <iframe id="resource-pdf" class="pdf-frame" title="Research PDF"></iframe>
+  <p class="resource-fallback"><a id="resource-download" target="_blank" rel="noopener noreferrer">Open the PDF in a new tab →</a></p>
+</main>
+
+<footer>© 2026 Jayin Khanna</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const title = params.get('title');
+  const file = params.get('file');
+  const titleElement = document.getElementById('resource-title');
+  const frame = document.getElementById('resource-pdf');
+  const download = document.getElementById('resource-download');
+  if (title) {
+    titleElement.textContent = title;
+    document.title = `${title} — Jayin Khanna`;
+  }
+  if (file) {
+    const pdfPath = `../assets/reports/${encodeURIComponent(file).replace(/%2F/g, '/')}`;
+    frame.src = pdfPath;
+    download.href = pdfPath;
+  }
+</script>
+
+</body>
+</html>
