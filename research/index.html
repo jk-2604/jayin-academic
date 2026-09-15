@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayin Khanna</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="brand">Jayin Khanna</a>
+  <div class="links">
+    <a href="index.html">About</a>
+    <a href="academic-development.html">Academic Development</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
+  </div>
+</nav>
+
+<main>
+
+  <div class="hero">
+    <div class="hero-photo-placeholder">Photo coming soon</div>
+    <div class="hero-text">
+      <h1>Jayin Khanna</h1>
+      <p>
+        I hold a BSc (Research) in Mathematics from Shiv Nadar Institution of Eminence
+        (Batch Topper, 2026), and I'm concurrently completing an online BS in Data Science
+        from IIT Madras.
+      </p>
+      <p>
+        I work on <strong>interpretability, alignment, and safety</strong> in
+        <strong>generative models</strong> and <strong>LLMs</strong> — with a mathematical
+        bias toward understanding why methods work before scaling them. My current focus is
+        safety alignment in text-to-image/video diffusion and trustworthiness repair in
+        fine-tuned LLMs.
+      </p>
+      <p>
+        I'm looking for a long-term research project aimed at publication at ICLR, ICML,
+        NeurIPS, or TMLR.
+      </p>
+
+      <div class="social-row">
+        <a href="mailto:jayin.research@gmail.com">Email</a>
+        <a href="cv.html">CV</a>
+        <a href="https://www.linkedin.com/in/jayin-khanna-95a027212" target="_blank">LinkedIn</a>
+        <a href="https://github.com/jk-2604" target="_blank">GitHub</a>
+        <a href="https://jayin-khanna.pages.dev/articles/" target="_blank">Research Notes</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Current Research</h2>
+  <div class="exp-item">
+    <h3>Safety-guided flow matching for T2I/T2V diffusion</h3>
+    <div class="meta">
+      <a href="https://amit.aiisc.ai/" target="_blank">AI Institute of South Carolina</a>
+      (<a href="https://amit.aiisc.ai/" target="_blank">Dr. Amit Sheth</a>,
+      <a href="https://www.bits-pilani.ac.in/goa/amitava-das/" target="_blank">Dr. Amitava Das</a>)
+    </div>
+    <p>
+      Developing a safety-potential-guided rectified flow-matching formulation in CLIP
+      embedding space to reduce harmful generations, benchmarked on the DETONATE dataset
+      against TRCE, CURE, SAEUron, and DoCo.
+    </p>
+  </div>
+  <div class="exp-item">
+    <h3>Post-hoc trustworthiness repair in LLMs</h3>
+    <div class="meta">
+      <a href="https://prathosh.in/" target="_blank">Deep Representation Learning Lab, IISc</a>
+      (<a href="https://prathosh.in/" target="_blank">Dr. Prathosh A. P.</a>)
+    </div>
+    <p>
+      Combining EK-FAC curvature estimation with targeted gradient ascent to mitigate bias,
+      unethical outputs, and toxicity in fine-tuned models — a compute-efficient alternative
+      to retraining or RLHF, evaluated across Qwen2 and Pythia with submodular subset
+      selection for non-redundant repair signals.
+    </p>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="exp-item">
+    <h3>Research Assistant — Deep Representation Learning Lab, IISc Bangalore</h3>
+    <div class="meta">Supervisor: Dr. Prathosh A. P. · Jun 2026 – Present</div>
+    <ul>
+      <li>Working on enhancing trustworthiness in fine-tuned LLMs by implementing the EK-FAC preconditioned gradient ascent pipeline for post-hoc bias repair in Qwen2 and Pythia LLMs.</li>
+      <li>Evaluating the repair pipeline across multiple model families, integrating submodular subset selection to reduce redundancy in gradient signals.</li>
+      <li>Evaluating effectiveness across stereotype, machine ethics, and toxicity dimensions.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Research Intern — IRT Group, AI Institute of South Carolina | DETONATE Group</h3>
+    <div class="meta">Supervisors: Dr. Amit Sheth &amp; Dr. Amitava Das · Feb 2026 – Present</div>
+    <ul>
+      <li>Working on safety alignment of Text-to-Image &amp; T2V diffusion and flow matching models using a neurosymbolic approach called scene graphs.</li>
+      <li>Developing a safety potential-guided rectified flow matching methodology in the CLIP embedding space to reduce hate content in T2I Diffusion models.</li>
+      <li>Benchmarked debiasing and safety methodologies — TRCE, CURE, SAEUron, and DoCo — on the lab's DETONATE dataset.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Machine Learning Research Fellow — SPIRE Lab, IISc Bangalore</h3>
+    <div class="meta">Supervisor: Prof. Prasanta Kumar Ghosh · Jul 2025 – Present (Summer Research Fellowship 2025)</div>
+    <ul>
+      <li>Research on unsupervised speech TSM using Generative Models — VAEs, GANs, Diffusion, and Flow Matching based models.</li>
+      <li>Implemented and trained DiffATSM, ScalerGAN, TSM-Net and Neural ATSM from scratch in PyTorch.</li>
+      <li>Conducted a comprehensive study of 10 models across 3 methodology classes on 19 experiments.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Deep Learning Research Intern — IIT Kharagpur</h3>
+    <div class="meta">Supervisor: Dr. Niloy Ganguly · 2025</div>
+    <ul>
+      <li>Worked on attribution techniques using Integrated Gradients, Manifold IG, and Guided IG towards neural network interpretability.</li>
+      <li>Extending these methods to sequential models and LLMs using Granger causality and Randomized Path Integrals.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Machine Learning Research Intern — DRDO-INMAS, Ministry of Defence</h3>
+    <div class="meta">Supervisor: Dr. Shilpi Modi · 2024</div>
+    <ul>
+      <li>Developed a CNN ResNet model for classifying sEMG stress measurements, improving accuracy from 91% to 97.98%.</li>
+      <li>Currently applying network control theory and GNNs to study cognitive state transitions in the brain.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Statistics Research Intern — University of California Santa Cruz (ISRP)</h3>
+    <div class="meta">Supervisor: Prof. Bruno Sansó · 2024</div>
+    <ul>
+      <li>Research on Analysis of Time-Varying Quantiles for Environmental Variables — Atmospheric Rivers along the California coast.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>© 2026 Jayin Khanna</footer>
+
+</body>
+</html>
